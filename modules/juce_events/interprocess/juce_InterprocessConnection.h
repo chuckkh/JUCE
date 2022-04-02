@@ -157,6 +157,18 @@ public:
         @see messageReceived
     */
     bool sendMessage (const MemoryBlock& message);
+  
+      //==============================================================================
+    /** Tries to send a message to the other end of this connection.
+
+        This will fail if it's not connected, or if there's some kind of write error. If
+        it succeeds, the connection object at the other end will receive the message by
+        a callback to its messageReceived() method.
+
+        @see messageReceived
+        @This was added by Charles Hubbard to eliminate the message header from sendMessage.
+    */
+    bool sendMessageNoHeader(const MemoryBlock& message);
 
     //==============================================================================
     /** Called when the connection is first connected.
