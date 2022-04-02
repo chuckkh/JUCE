@@ -1,5 +1,8 @@
 ![alt text](https://assets.juce.com/juce/JUCE_banner_github.png "JUCE")
 
+Forked and modified by Charles Hubbard under the terms of the GPL.
+One function has been added for use with Rationale.
+
 JUCE is an open-source cross-platform C++ application framework for creating high quality
 desktop and mobile applications, including VST, VST3, AU, AUv3, RTAS and AAX audio plug-ins.
 JUCE can be easily integrated with existing projects via CMake, or can be used as a project
